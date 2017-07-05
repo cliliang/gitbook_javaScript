@@ -17,6 +17,16 @@ for (i in array){
     sum += i;
 }
 ```
+4、constructor属性返回所有JavaScript变量的构造函数。
+```
+"John".constructor     // 返回函数 String()  { [native code] }
+(3.14).constructor     // 返回函数 Number()  { [native code] }
+false.constructor      // 返回函数 Boolean() { [native code] }
+[1,2,3,4].constructor     // 返回函数 Array()   { [native code] }
+{name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
+new Date().constructor             // 返回函数 Date()    { [native code] }
+function () {}.constructor         // 返回函数 Function(){ [native code] }
+```
 
 
 
