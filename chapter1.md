@@ -18,7 +18,7 @@ for (i in array){
 }
 ```
 4、constructor属性返回所有JavaScript变量的构造函数。
-```
+```js
 "John".constructor     // 返回函数 String()  { [native code] }
 (3.14).constructor     // 返回函数 Number()  { [native code] }
 false.constructor      // 返回函数 Boolean() { [native code] }
@@ -26,6 +26,12 @@ false.constructor      // 返回函数 Boolean() { [native code] }
 {name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
 new Date().constructor             // 返回函数 Date()    { [native code] }
 function () {}.constructor         // 返回函数 Function(){ [native code] }
+```
+利用此可以查看类型，是否为数组(包含字符串 "Array")：
+```js
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
 ```
 
 
