@@ -57,7 +57,9 @@ m|执行多行匹配。
 ```
 var patt = /e/;
 patt.test("we are the best");
-结果为true
+//结果为true
+patt.exec("hello world");
+//结果为e,因为字符串中含有e
 ```
 
 
