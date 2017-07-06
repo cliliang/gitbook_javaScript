@@ -86,6 +86,26 @@ switch(x){
          break;
 }
 ```
+- 浮点型数据使用注意事项。
+```js
+//JavaScript 中的所有数据都是以 64 位浮点型数据(float) 来存储。
+//所有的编程语言，包括 JavaScript，对浮点型数据的精确度都很难确定
+var x = 0.1;
+var y = 0.2;
+var z = x + y;
+if(z == 0.3) //返回false
+```
+为解决以上问题，可以用整数的除法来解决：
+```js
+var z = (x * 10 + y * 10) / 10;
+```
+- 不能在字符串中直接使用回车换行，而应该使用\
+```js
+var str1 = "hello
+world"; //会报错
+var str2 = "hello \
+world";
+```
 
 
 
