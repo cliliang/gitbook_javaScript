@@ -5,5 +5,6 @@ alert(NaN == NaN) //输出false
 ```
 出于这个原因，不推荐使用 NaN 值本身。函数 isNaN() 会做得相当好：
 ```js
-
+alert(isNaN("blue"));  //输出 "true"
+alert(isNaN("666"));  //输出 "false"
 ```
