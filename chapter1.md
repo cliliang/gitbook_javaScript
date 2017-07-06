@@ -65,7 +65,6 @@ patt.exec("hello world");
 //结果为e,因为字符串中含有e
 ```
 6、严格模式:在严格模式下执行，消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为;
-
 ```js
 "use strict"
 ```
