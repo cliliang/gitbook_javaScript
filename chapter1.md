@@ -33,6 +33,9 @@ function isArray(myArray) {
     return myArray.constructor.toString().indexOf("Array") > -1;
 }
 ```
+5、正则表达式，常用str的search()和replace()方法。
+>/正则表达式主体/修辞符(可选)
+
 
 
 
