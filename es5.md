@@ -18,7 +18,6 @@ Object对象有以下几个方法：
 3、Number对象
 几个处理数值的专用方法：
 - **toFixed()**方法返回的是具有指定位数小数的数字的字符串表示。例如：
-
 ```js
 var oNumberObject = new Number(39);
 alert(oNumberObject.toFixed(2)); //结果为"39.00"
