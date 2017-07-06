@@ -33,7 +33,7 @@ function isArray(myArray) {
     return myArray.constructor.toString().indexOf("Array") > -1;
 }
 ```
-5、正则表达式，常用str的search()和replace()方法。
+5、[正则表达式](http://www.runoob.com/js/js-regexp.html)，常用str的search()和replace()方法。
 >/正则表达式主体/修辞符(可选)
 
 ```js
@@ -42,12 +42,24 @@ var n = str.search(/robot/i);
 var m = str.search("robot");
 结果都为6
 ```
-正则表达式的修辞符
+正则表达式的修辞符的定义：
 
-|修辞符| 描述
-|:------:|:------
-|i|执行对大小写不敏感的匹配
-|
+修辞符| 描述
+------|------
+i|执行对大小写不敏感的匹配
+g|执行全局匹配(查找所有匹配而非在找到第一个匹配后停止)。
+m|执行多行匹配。
+######test() 方法
+是一个正则表达式方法，方法用于检测一个字符串是否匹配某个模式，如果字符串中含有匹配的文本，则返回 true，否则返回 false。
+
+```
+var patt = /e/;
+patt.test("The best things in life are free!");
+
+```
+######exec() 方法
+是一个正则表达式方法，用于检索字符串中的正则表达式的匹配，该函数返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。
+
 
 
 
