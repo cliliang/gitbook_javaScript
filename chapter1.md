@@ -46,6 +46,12 @@ var m = str.search("robot");
 修辞符 | 描述 
 :------ | :------: 
 i | 执行对大小写不敏感的匹配 
+结束
+dog | bird | cat
+----|------|----
+foo | foo | foo
+bar | bar | bar
+baz | baz | baz
 
 
 
