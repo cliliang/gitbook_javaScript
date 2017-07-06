@@ -35,6 +35,11 @@ function isArray(myArray) {
 ```
 5、正则表达式，常用str的search()和replace()方法。
 >/正则表达式主体/修辞符(可选)
+```js
+var str = "hello robot";
+var n = str.search(/robot/i);
+结果为6
+```
 
 
 
