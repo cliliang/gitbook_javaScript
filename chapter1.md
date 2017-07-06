@@ -82,7 +82,7 @@ if(x == "10") //返回true
 ```js
 var y = 10;
 switch(x){
-     case "10":
+     case "10": //此条并不会被执行
          break;
 }
 ```
