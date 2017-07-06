@@ -72,6 +72,21 @@ patt.exec("hello world");
 - 提高编译器效率，增加运行速度；
 - 为未来新版本的Javascript做好铺垫。
 
+7、作用误区
+- 在常规的比较中，数据类型是被忽略的。
+```js
+var x = 10;
+if(x == "10") //返回true
+```
+但是在switch语句中，使用的却是===
+```js
+var y = 10;
+switch(x){
+     case "10":
+         break;
+}
+```
+
 
 
 
