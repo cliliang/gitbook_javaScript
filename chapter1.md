@@ -68,7 +68,7 @@ patt.exec("hello world");
 ```js
 "use strict"
 ```
-- 消除代码运行的一些不安全之处，保证代码运行的安全；
+- [消除代码运行的一些不安全之处，保证代码运行的安全；](http://www.runoob.com/js/js-strict.html)
 - 提高编译器效率，增加运行速度；
 - 为未来新版本的Javascript做好铺垫。
 
