@@ -18,9 +18,15 @@ Object对象有以下几个方法：
 
 3、Number对象
 几个处理数值的专用方法：
-- **toFixed()**方法返回的是具有指定位数小数的数字的字符串表示。例如：
+- **toFixed()**方法返回的是具有指定位数小数的数字的_**字符串**_表示。例如：
 ```js
 var oNumberObject = new Number(39);
 alert(oNumberObject.toFixed(2)); //结果为"39.00"
+```
+- **toExponential()**它返回的是用科学计数法表示的数字的_**字符串形式**_。
+与 toFixed() 方法相似，toExponential() 方法也有一个参数，指定要输出的小数的位数。例如：
+```js
+var oNumber = new Number(64);
+alert(oNumber.toExponential(1));//结果为"6.4e+1"
 ```
 
