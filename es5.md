@@ -42,6 +42,45 @@ ECMAScript中只存在一种作用域 - 公用作用域。ECMAScript中的所有
 ```js
 obj._color_ = "Blue";
 ```
+5、创建对象方法
+- __混合的构造函数/原型方式：__
+联合使用构造函数和原型方式，就可像用其他程序设计语言一样创建对象。这种概念非常简单，即_用构造函数定义对象的所有非函数属性，用原型方式定义对象的函数属性（方法）_。结果是，所有函数都只创建一次，而每个对象都具有自己的对象属性实例。
 
+```js
+function Car(sColor, iDoor, iMpg){
+  this.color = sColor;
+  this.door = iDoor;
+  this.mpg = iMpg;
+  this.drivers = new Array("Mike", "John");
+}
+
+Car.prototype.showColor = function(){
+  alert(this.color);
+};
+var oCar1 = new Car("red",4,23);
+var oCar2 = new Car("blue",3,25);
+
+oCar1.drivers.push("Bill");
+
+alert(oCar1.drivers);	//输出 "Mike,John,Bill"
+alert(oCar2.drivers);	//输出 "Mike,John"
+
+```
+- __动态原型方法：__动态原型方法的基本想法与混合的构造函数/原型方式相同，即在构造函数内定义非函数属性，而函数属性则利用原型属性定义。唯一的区别是赋予对象方法的位置。
+
+```js
+function Car(sColor,iDoors,iMpg) {
+  this.color = sColor;
+  this.doors = iDoors;
+  this.mpg = iMpg;
+  this.drivers = new Array("Mike","John");
+  if (typeof Car._initialized == "undefined") {
+    Car.prototype.showColor = function() {
+      alert(this.color);
+    }; 
+    Car._initialized = true;
+  }
+}
+```
 
 
