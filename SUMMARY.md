@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [基础学习](chapter1.md)
-* [ES5](es5.md)
+* [JavaScript基础学习](chapter1.md)
+* [ES5基础学习](es5.md)
 

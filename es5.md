@@ -30,4 +30,7 @@ alert(oNumberObject.toFixed(2)); //结果为"39.00"
 var oNumber = new Number(64);
 alert(oNumber.toExponential(1));//结果为"6.4e+1"
 ```
+4、对象作用域
+
+ECMAScript中只存在一种作用域 - 公用作用域。ECMAScript中的所有对象的所有属性和方法都是公用的。因此，定义自己的类和对象时，必须格外小心。记住，所有属性和方法默认都是公用的！
 
