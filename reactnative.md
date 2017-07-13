@@ -18,3 +18,7 @@ brew cleanup
 ```
 ## IDE
 采用[Atom＋Nuclide](http://blog.csdn.net/hello_hwc/article/details/51612139)的方式IDE
+## flow
+进行静态语法检查，自动补全
+## 项目的React-Native版本升级
+在项目目录下命令`react-native-git-upgrade`
