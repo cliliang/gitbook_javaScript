@@ -16,3 +16,5 @@ brew upgrade
 //清理：清理不需要的版本极其安装包缓存
 brew cleanup 
 ```
+## IDE
+采用[Atom＋Nuclide](http://blog.csdn.net/hello_hwc/article/details/51612139)的方式IDE
