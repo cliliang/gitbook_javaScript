@@ -38,4 +38,8 @@ fetch('http://example.com')    //GET
 (function (a = 5) {}).length // 0
 (function (a, b, c = 5) {}).length // 2
 ```
+同样，rest参数也不记入`length`属性
+```js
+(function(...args){}).length //0
+```
 
