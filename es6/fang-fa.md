@@ -19,3 +19,11 @@ function log({x, y = 5}){
 log({})     //undefined, 5
 log({1, 6})    //1, 6
 ```
+* 双默认值
+
+```js
+function fetch(url, {method = 'GET'}={}){
+    console.log(method);
+}
+fetch('http://example.com')    //GET
+```
