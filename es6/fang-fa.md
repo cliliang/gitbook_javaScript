@@ -13,5 +13,9 @@ log('hello', '')    //hello
 * 解构方式设置默认值
 
 ```js
-function log({x, y = })
+function log({x, y = 5}){
+    console.log(x, y);
+}
+log({})     //undefined, 5
+log({1, 6})    //1, 6
 ```
