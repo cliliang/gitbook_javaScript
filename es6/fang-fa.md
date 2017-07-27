@@ -43,4 +43,8 @@ fetch('http://example.com')    //GET
 (function(...args){}).length //0
 ```
 
+```js
+var du = x => x;
+```
+
 
