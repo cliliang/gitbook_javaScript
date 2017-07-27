@@ -56,7 +56,8 @@ function bar2(fun = x => foo){
     let foo = 'in';
     console.log(fun());
 }
-bar2(); //Error
+bar2(); //Error 匿名函数里面的foo指向函数外层，
+        //但是函数外层并没有声明foo，所以就报错了。
 ```
 
 
