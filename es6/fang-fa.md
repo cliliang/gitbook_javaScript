@@ -70,5 +70,14 @@ function push(array, ...args){
 let a = [];
 push(1, 3, 6);
 ```
+4、扩展运算符
+扩展运算符是三个点（...）。它好比rest参数的逆运算，将一个数组转为用逗号分隔的参数序列。该运算符主要用于函数调用。
+```js
+function add(x, y){
+    return x + y;
+}
+var items = [3, 6];
+add(...items); // 9
+```
 
 
