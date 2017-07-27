@@ -42,5 +42,15 @@ fetch('http://example.com')    //GET
 ```js
 (function(...args){}).length //0
 ```
+2、作用域
+一个需要注意的地方是，如果参数默认值是一个变量，则该变量所处的作用域，与其他变量的作用域规则是一样的，即先是当前函数的作用域，然后才是全局作用域。
+```js
+let foo = 'out';
+function bar(fun = x => foo){
+    let foo = 'in';
+    console.log(fun());
+}
+bar(); //out
+```
 
 
