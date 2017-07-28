@@ -79,6 +79,18 @@ function add(x, y){
 var items = [3, 6];
 add(...items); // 9
 ```
+5、name属性
+如果将一个匿名函数赋值给一个变量，ES5的name属性，会返回空字符串，而ES6的name属性会返回实际的函数名。
+
+```js
+const foo = function(){};
+foo.name(); //foo
+```
+如果将一个具名函数赋值给一个变量，则ES5和ES6的name属性都返回这个具名函数原本的名字。
+```js
+const foo1 = function faz(){};
+foo1.name(); // faz
+```
 
 
 
