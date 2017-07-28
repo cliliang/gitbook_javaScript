@@ -59,7 +59,7 @@ function bar2(fun = x => foo){
 bar2(); //Error 匿名函数里面的foo指向函数外层，
         //但是函数外层并没有声明foo，所以就报错了。
 ```
-3、rest参数
+3、rest参数，解构赋值
 
 ```js
 function push(array, ...args){
