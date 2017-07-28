@@ -1,8 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-* [JavaScript基础学习](chapter1.md)
-* [ES5基础学习](es5.md)
+* [JavaScript](chapter1.md)
+* [ES5](es5.md)
 * [ES6](es6.md)
   * [方法](es6/fang-fa.md)
+  * [对象](es6/dui-xiang.md)
 
