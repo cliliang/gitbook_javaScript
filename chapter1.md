@@ -106,6 +106,11 @@ world"; //会报错
 var str2 = "hello \
 world";
 ```
+- 如果要使用回车换行，字符串要用反引号。
+```js
+var a = `ab
+c`;
+```
 8、函数
 在 JavaScript 中使用 typeof 操作符判断函数类型将返回"function" 。但是JavaScript 函数描述为一个对象更加准确。JavaScript**函数有属性和方法**。
 arguments.length 属性返回函数调用过程接收到的参数个数：
